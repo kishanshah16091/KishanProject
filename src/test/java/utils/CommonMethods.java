@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -101,41 +102,6 @@ public class CommonMethods extends PageInitializers {
 
     }
 
-
- /*   // homework
-    public static void switchToFrame(WebElement element) {
-        try {
-            driver.switchTo().frame(element);
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void switchToFrame(int index) {
-        try {
-            driver.switchTo().frame(index);
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void switchToFrame(String nameOrId) {
-        try {
-            driver.switchTo().frame(nameOrId);
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void switchToDefaultFrame() {
-        try {
-            driver.switchTo().defaultContent();
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }*/
-
-    // select drop down by text
     public static void selectDdValue(WebElement element, String textToSelect) {
         Select select = new Select(element);
         List<WebElement> options = select.getOptions();
@@ -153,6 +119,16 @@ public class CommonMethods extends PageInitializers {
         if (size>index) {
             select.selectByIndex(index);
         }
+    }
+
+    public static void moveToElement (){
+        Actions moveTo = new Actions(driver);
+        moveTo.moveToElement(addLicenses.qualificationTab);
+
+    }
+
+    public static void select(){
+        List<WebElement> qualificationsOptions = driver.findElements(By.tagName("a"));
     }
 
 }
