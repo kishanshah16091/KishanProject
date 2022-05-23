@@ -13,13 +13,13 @@ public class AddLicensesPage extends CommonMethods {
     @FindBy(id = "menu_admin_Qualifications")
     public WebElement qualificationTab;
 
-    @FindBy(id = "menu_admin_viewLicenses")
-    public WebElement licensesSub;
+//    @FindBy(id = "menu_admin_viewLicenses")
+//    public WebElement licensesSub;
 
     @FindBy(id = "btnAdd")
     public WebElement addButton;
 
-    @FindBy(id = "license_name")
+    @FindBy(xpath = "//*[@id=\"license_name\"]")
     public WebElement licenseName;
 
     @FindBy(id = "btnSave")

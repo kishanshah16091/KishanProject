@@ -112,7 +112,7 @@ public class CommonMethods extends PageInitializers {
             }
         }
     }
-    // select drop down by index
+    // select dropDown by index
     public static void selectDdValue(WebElement element, int index) {
         Select select = new Select(element);
         int size = select.getOptions().size();
@@ -121,10 +121,27 @@ public class CommonMethods extends PageInitializers {
         }
     }
 
-    public static void moveToElement (){
+    public static void moveToElement (WebElement element){
         Actions moveTo = new Actions(driver);
-        moveTo.moveToElement(addLicenses.qualificationTab);
+        moveTo.moveToElement(element);
 
+    }
+
+    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
+    public static void selectingDDQualification (String desiredQualification) {
+        List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
+        for (WebElement qualification : qualificationDD) {
+            String text= qualification.getText();
+            System.out.println(text);
+            if (qualification.getText().equals(desiredQualification)) {
+                text= qualification.getText();
+                qualification.click();
+                // click(qualification);
+                break;
+
+            }
+
+        }
     }
 
     public static void select(){
