@@ -43,7 +43,7 @@ public class AdminAddLicenseSteps extends CommonMethods {
 
     }
 
-    @When("clicks on save button")
+    @Then("clicks on save button")
     public void clicks_on_save_button() {
         click(adminAddLicense.saveButton);
     }

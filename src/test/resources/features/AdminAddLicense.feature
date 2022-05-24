@@ -12,5 +12,4 @@ Feature: As an admin I should be able to add employee's licenses in qualificatio
     Given user navigates to Qualifications
     And clicks Add under License Box
     When user able to fill out all license fields
-    #And clicks on save button
-    #Then new license adds to list
+    Then  clicks on save button
