@@ -26,7 +26,7 @@ import org.junit.runner.RunWith;
         // use and if we need to execute scenarios from logical and keyword which will execure the senarios
         // having both the tags in it
 
-        tags =  "@test",
+        tags =  "@adding",
 
         // plugin helps to write reports
         // we write multiple plugins inside { }
