@@ -70,9 +70,9 @@ public class CommonMethods extends PageInitializers {
         getJSExecutor().executeScript("arguments[0].click();", element);
     }
 
-   /* public static void tearDown() {
+    public static void tearDown() {
         driver.quit();
-    }*/
+    }
 
 
     // method to take screenshot

@@ -47,6 +47,7 @@ public class AdminAddEmpSkillsSteps extends CommonMethods {
     @Then("clicks on save button")
     public void clicks_on_save_button() {
         click(adminAddEmpSkillsPage.saveButton);
+
     }
 
 
