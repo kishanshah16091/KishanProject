@@ -70,9 +70,9 @@ public class CommonMethods extends PageInitializers {
         getJSExecutor().executeScript("arguments[0].click();", element);
     }
 
-//    public static void tearDown() {
-//        driver.quit();
-//    }
+   public static void tearDown() {
+       driver.quit();
+    }
 
 
     // method to take screenshot
@@ -164,17 +164,18 @@ public class CommonMethods extends PageInitializers {
 
     //handling calendars
 
-    public static void selectDay(List<WebElement> listOfDays, String desiredDay) {
+    public static void handlingCalendar(List<WebElement> listOfDays, String desiredDay, WebElement monthElement, String month, WebElement yearElement, String year) {
         for (WebElement day : listOfDays) {
             String dayText = day.getText();
             if (dayText.equals(desiredDay)) {
                 day.click();
                 break;
             }
-
-
         }
-
+        selectDdValue(monthElement, month);
+        selectDdValue(yearElement, year);
 
     }
+
+
 }
