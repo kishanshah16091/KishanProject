@@ -133,7 +133,16 @@ public class CommonMethods extends PageInitializers {
             select.selectByIndex(index);
         }
     }
-
+    public static void selectDdValue(WebElement element, String textToSelect) {
+        Select select = new Select(element);
+        List<WebElement> options = select.getOptions();
+        for (WebElement option : options) {
+            if (option.getText().equals(textToSelect)) {
+                select.selectByVisibleText(textToSelect);
+                break;
+            }
+        }
+    }
 
     // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
     public static void selectingDDQualification(String desiredQualification) {

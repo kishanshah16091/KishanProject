@@ -45,10 +45,10 @@ public class AddWorkExperiencePage extends CommonMethods {
     public WebElement toCalender;
 
     @FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/div/div/select[1]")
-    public WebElement toMonth;
+    public WebElement month;
 
     @FindBy( xpath = "//*[@id=\"ui-datepicker-div\"]/div/div/select[2]")
-    public WebElement toYear;
+    public WebElement year;
 
     @FindBy( xpath = "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[2]/td[4]/a")
     public List<WebElement> toDate;

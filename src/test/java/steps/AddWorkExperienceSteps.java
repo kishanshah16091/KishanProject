@@ -34,10 +34,10 @@ public class AddWorkExperienceSteps extends CommonMethods {
         sendText(workExperiencePage.jobTitle,"Product Manager");
 
         click(workExperiencePage.fromCalender);
-        handlingCalendar(workExperiencePage.workExperienceCalendarDays,"10", workExperiencePage.fromMonth, "June",workExperiencePage.fromYear,"2020");
+        handlingCalendar(workExperiencePage.workExperienceCalendarDays,"10", workExperiencePage.month, "June",workExperiencePage.year,"2020");
 
         click(workExperiencePage.toCalender);
-        handlingCalendar(workExperiencePage.workExperienceCalendarDays,"15", workExperiencePage.toMonth, "June",workExperiencePage.toYear,"2022");
+        handlingCalendar(workExperiencePage.workExperienceCalendarDays,"15", workExperiencePage.month, "June",workExperiencePage.year,"2022");
 
         sendText(workExperiencePage.addComment,"Shows Great Effort");
     }

@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 
         monochrome = true,
 
-        tags =  "@membership",
+        tags =  "@test",
 
         plugin= {
                 "html:target/cucumber.html", "pretty", "json:target/cucumber.json",
