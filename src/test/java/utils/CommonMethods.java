@@ -123,40 +123,6 @@ public class CommonMethods extends PageInitializers {
         }
     }
 
-
- /*   // homework
-    public static void switchToFrame(WebElement element) {
-        try {
-            driver.switchTo().frame(element);
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void switchToFrame(int index) {
-        try {
-            driver.switchTo().frame(index);
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void switchToFrame(String nameOrId) {
-        try {
-            driver.switchTo().frame(nameOrId);
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void switchToDefaultFrame() {
-        try {
-            driver.switchTo().defaultContent();
-        } catch (NoSuchFrameException e) {
-            e.printStackTrace();
-        }
-    }*/
-
     // select drop down by text
     public static void selectDdValue(WebElement element, String textToSelect) {
         Select select = new Select(element);

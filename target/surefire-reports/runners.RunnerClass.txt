@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runners.RunnerClass
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.171 s <<< FAILURE! - in runners.RunnerClass
-Validation of login scenarios.Admin login  Time elapsed: 6.448 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.702 s <<< FAILURE! - in runners.RunnerClass
+Validation of login scenarios.Admin login  Time elapsed: 5.118 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step "user clicks on Admin option" is undefined. You can implement it using the snippet(s) below:
 
