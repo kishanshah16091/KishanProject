@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -100,7 +101,43 @@ public class CommonMethods extends PageInitializers {
         return sdf.format(date);
 
     }
+    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
+    public static void selectingDDQualification (String desiredQualification) {
+        List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
+        for (WebElement qualification : qualificationDD) {
+            String text= qualification.getText();
+            System.out.println(text);
+            if (qualification.getText().equals(desiredQualification)) {
+                text= qualification.getText();
+                qualification.click();
+               // click(qualification);
+                break;
 
+            }
+
+        }
+    }
+    public static void moveToElement (WebElement element){
+        Actions moveTo = new Actions(driver);
+        moveTo.moveToElement(element);
+
+    }
+
+
+// this method first click on admin sidebar then it loops through sidebar tabs and navigates to the desired subtab
+// if it matches then it clicks on the desired sidetab (jobs, nationalities,qualification, configuration, )
+
+   public static void adminSubTabs (String value) {
+        click(qualificationsPage.adminTab);
+   List<WebElement>list=driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li"));
+    for(WebElement subTab:list){
+    String text=subTab.getText();
+    if(text.equals(value)) {
+        subTab.click();
+        break;
+    }
+    }
+   }
 
  /*   // homework
     public static void switchToFrame(WebElement element) {
@@ -135,7 +172,7 @@ public class CommonMethods extends PageInitializers {
         }
     }*/
 
-    // select drop down by text
+   /* select drop down by text
     public static void selectDdValue(WebElement element, String textToSelect) {
         Select select = new Select(element);
         List<WebElement> options = select.getOptions();
@@ -153,6 +190,6 @@ public class CommonMethods extends PageInitializers {
         if (size>index) {
             select.selectByIndex(index);
         }
-    }
+    }*/
 
 }
