@@ -28,18 +28,25 @@ public class AdminAddLicenseSteps extends CommonMethods {
     }
 
     @When("user able to fill out all license fields")
-    public void user_able_to_fill_out_all_license_fields() {
-        selectDdValue(adminAddLicense.licenseType, "Jowher");
+    public void user_able_to_fill_out_all_license_fields() throws InterruptedException {
+        click(adminAddLicense.licenseType);
+       // selectDdValue(adminAddLicense.licenseType, "Jowher");
+        selectDdValue(adminAddLicense.licenseType,3);
+
         click(adminAddLicense.licenseNumber);
         sendText(adminAddLicense.licenseNumber, "000000000");
 
         click(adminAddLicense.issueDate);
         selectDdValue(adminAddLicense.calendarMonth, "May");
         selectDdValue(adminAddLicense.calendarYear, "2022");
+        Thread.sleep(2000);
+        selectDay(adminAddLicense.calendarDays, "4");
 
          click(adminAddLicense.expiryDate);
          selectDdValue(adminAddLicense.calendarMonth, "June");
         selectDdValue(adminAddLicense.calendarYear, "2023");
+        Thread.sleep(2000);
+        selectDay(adminAddLicense.calendarDays, "7");
 
     }
 

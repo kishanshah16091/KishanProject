@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 import static utils.CommonMethods.driver;
 
 public class AdminAddLicensePage {
@@ -43,6 +45,10 @@ public class AdminAddLicensePage {
 
     @FindBy (xpath = "//*[@id='btnLicenseSave']")
     public WebElement saveButton;
+
+    @FindBy(xpath = " //*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td")
+    public List<WebElement> calendarDays;
+
 
 
     public AdminAddLicensePage(){

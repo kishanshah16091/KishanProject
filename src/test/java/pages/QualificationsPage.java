@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
-public class AddLicensesPage extends CommonMethods {
+public class QualificationsPage extends CommonMethods {
 
     @FindBy(id = "menu_admin_viewAdminModule")
     public WebElement adminTab;
@@ -25,7 +25,7 @@ public class AddLicensesPage extends CommonMethods {
     @FindBy(id = "btnSave")
     public WebElement saveButton;
 
-    public AddLicensesPage() {
+    public QualificationsPage() {
         PageFactory.initElements(driver, this);
     }
 

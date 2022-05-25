@@ -11,11 +11,11 @@ import org.junit.runner.RunWith;
         glue = "steps",
         dryRun = false,
         monochrome = true,
-        tags = "@admin"
-//        plugin= {
-//                "html:target/cucumber.html", "pretty", "json:target/cucumber.json",
-//                "rerun:target/failed.txt"
-//        }
+        tags = "@admin",
+       plugin= {
+                "html:target/cucumber.html", "pretty", "json:target/cucumber.json",
+               "rerun:target/failed.txt"
+       }
 )
 
 public class RunnerClass {
