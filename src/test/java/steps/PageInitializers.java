@@ -2,6 +2,8 @@ package steps;
 
 
 import pages.DashboardPage;
+import pages.ContactDetailsPage;
+import pages.EmergencyContactPage;
 import pages.LoginPage;
 
 public class PageInitializers {
@@ -9,21 +11,15 @@ public class PageInitializers {
     // this page is in inheritance with common method --- common method extends PageInitializers
 
     public static LoginPage login;
-   /* public static EmployeeSearchPage employeeSearchPage;
-    public static AddEmployeePage addEmployeePage;
-
-    */
+    public static ContactDetailsPage contactDetailsPage;
+    public static EmergencyContactPage emergencyContactPage;
     public static DashboardPage dash;
-
 
     public static void intializePageObjects() {
         login = new LoginPage();
-        /*
-        employeeSearchPage = new EmployeeSearchPage();
-        addEmployeePage = new AddEmployeePage();
-
-         */
         dash = new DashboardPage();
+        contactDetailsPage = new ContactDetailsPage();
+        emergencyContactPage=new EmergencyContactPage();
 
     }
 }
