@@ -14,6 +14,7 @@ Feature:As an admin I should be able to change employee's contact details
     Scenario:
       Given  user clicks on contact details and click on edit button
       And user add employees and verify they are added
-      |Address Street 1|Address Street 2|City   |ZipCode|Country      |State   |Home Telephone|Mobile      |Work Telephone|Work Email      |Other Email      |
+
+      |Address Street 1|Address Street 2|City   |ZipCode |Country      |State   |Home Telephone|Mobile      |Work Telephone|Work Email      |Other Email      |
       |123 Main Street |456 Main Street |Phoenix|56789   |United States|Arizona|555 222 3344  |888 999 4566|666 555 2233  |tester@gmail.com|develop@gmail.com|
 
