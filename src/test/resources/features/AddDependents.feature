@@ -9,7 +9,6 @@ Feature: As admin I should be able to add employee's multiple dependents
 
   @adding
   Scenario: Adding employee dependents
-
     And select Dependends
     And clicks on add button
     When admin user able to add all dependent details

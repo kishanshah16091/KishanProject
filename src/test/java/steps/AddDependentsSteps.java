@@ -32,7 +32,8 @@ public class AddDependentsSteps extends CommonMethods {
     public void admin_user_able_to_add_all_dependent_details() {
        sendText(addDependents.dependentName,"Khattak");
       //sendText(addDependents.relationship,"Child");
-        selectDdValue(addDependents.relationship,"Child");
+        //selectDdValue(addDependents.relationship,"Child");
+        selectDdValue(addDependents.relationship,1);
 
         click(addDependents.BDate);
         selectDdValue(addDependents.BMonth, "May");
