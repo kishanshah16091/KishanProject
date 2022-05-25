@@ -101,19 +101,31 @@ public class CommonMethods extends PageInitializers {
         return sdf.format(date);
 
     }
+    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
 
-    public static void selectDdValue(WebElement element, String textToSelect) {
-        Select select = new Select(element);
-        List<WebElement> options = select.getOptions();
-        for (WebElement option : options) {
-            if (option.getText().equals(textToSelect)) {
-                select.selectByVisibleText(textToSelect);
+    public static void moveToElement(WebElement element) {
+        Actions moveTo = new Actions(driver);
+        moveTo.moveToElement(element);
+
+    }
+
+
+// this method first click on admin sidebar then it loops through sidebar tabs and navigates to the desired subtab
+// if it matches then it clicks on the desired sidetab (jobs, nationalities,qualification, configuration, )
+
+    public static void adminSubTabs(String value) {
+        click(qualificationsPage.adminTab);
+        List<WebElement> list = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li"));
+        for (WebElement subTab : list) {
+            String text = subTab.getText();
+            if (text.equals(value)) {
+                subTab.click();
                 break;
             }
         }
     }
 
-    // select dropDown by index
+
     public static void selectDdValue(WebElement element, int index) {
         Select select = new Select(element);
         int size = select.getOptions().size();
@@ -122,11 +134,6 @@ public class CommonMethods extends PageInitializers {
         }
     }
 
-    public static void moveToElement(WebElement element) {
-        Actions moveTo = new Actions(driver);
-        moveTo.moveToElement(element);
-
-    }
 
     // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
     public static void selectingDDQualification(String desiredQualification) {
@@ -169,3 +176,4 @@ public class CommonMethods extends PageInitializers {
 
     }
 }
+

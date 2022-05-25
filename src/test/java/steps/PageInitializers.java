@@ -4,6 +4,7 @@ package steps;
 import pages.AddWorkExperiencePage;
 import pages.DashboardPage;
 import pages.LoginPage;
+import pages.QualificationsPage;
 
 public class PageInitializers {
 
@@ -15,9 +16,10 @@ public class PageInitializers {
     public static LoginPage login;
    /* public static EmployeeSearchPage employeeSearchPage;
     public static AddEmployeePage addEmployeePage;
-
     */
     public static DashboardPage dash;
+    public static QualificationsPage qualificationsPage;// Zulfiya
+   // public static EmployeeProfilePage employeeProfilePage; //Zulfiya
 
 
     public static void intializePageObjects() {
@@ -30,6 +32,8 @@ public class PageInitializers {
 
          */
         dash = new DashboardPage();
+      //  employeeProfilePage = new EmployeeProfilePage;
+        qualificationsPage =new QualificationsPage(); // Zulfiya
 
     }
 }
