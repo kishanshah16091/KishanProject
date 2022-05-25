@@ -21,7 +21,7 @@ import org.junit.runner.RunWith;
         // when we set it to true, it simply removes all irrelevant information
         monochrome = true,
         // tags will inteitfy the scenario based on the tag we provide in the feature file
-        tags = "@datatable"
+        tags = "@admin"
 
 
 )

@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -69,9 +70,9 @@ public class CommonMethods extends PageInitializers {
         getJSExecutor().executeScript("arguments[0].click();", element);
     }
 
-    public static void tearDown() {
+   /* public static void tearDown() {
         driver.quit();
-    }
+    }*/
 
 
     // method to take screenshot
@@ -99,6 +100,27 @@ public class CommonMethods extends PageInitializers {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         return sdf.format(date);
 
+    }
+    public static void moveToElement (WebElement element){
+        Actions moveTo = new Actions(driver);
+        moveTo.moveToElement(element);
+
+    }
+    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
+    public static void selectingDDQualification (String desiredQualification) {
+        List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
+        for (WebElement qualification : qualificationDD) {
+            String text= qualification.getText();
+            System.out.println(text);
+            if (qualification.getText().equals(desiredQualification)) {
+                text= qualification.getText();
+                qualification.click();
+                // click(qualification);
+                break;
+
+            }
+
+        }
     }
 
 

@@ -19,6 +19,7 @@ public class LoginSteps extends CommonMethods {
 
     @Then("admin user is successfully logged in")
     public void admin_user_is_successfully_logged_in() {
+
         Assert.assertTrue(dash.welcomeMessage.isDisplayed());
     }
 
