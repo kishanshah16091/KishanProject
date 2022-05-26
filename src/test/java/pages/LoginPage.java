@@ -13,7 +13,7 @@ public class LoginPage extends CommonMethods {
    @FindBy(name="txtPassword")
     public WebElement passwordBox;
 
-   @FindBy(id="btnLogin")
+   @FindBy (id="btnLogin")
     public WebElement loginBtn;
 
    @FindBy(id="spanMessage")
@@ -22,9 +22,5 @@ public class LoginPage extends CommonMethods {
    public LoginPage() {
        PageFactory.initElements(driver, this);
    }
-
-
-
-
 
 }

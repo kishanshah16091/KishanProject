@@ -9,10 +9,10 @@ public class ConfigReader {
     static Properties prop;
 
     //this method will read any property file
-    public static Properties readProperties(String filePath){
+    public static Properties readProperties(String filePath) {
         try {
-            FileInputStream fis=new FileInputStream(filePath);
-            prop=new Properties();
+            FileInputStream fis = new FileInputStream(filePath);
+            prop = new Properties();
             prop.load(fis);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -21,8 +21,9 @@ public class ConfigReader {
         }
         return prop;
     }
+
     //this method get single value based on the key
-    public static String getPropertyValue(String key){
+    public static String getPropertyValue(String key) {
         return prop.getProperty(key);
     }
 }

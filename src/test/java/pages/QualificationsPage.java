@@ -26,7 +26,6 @@ public class QualificationsPage extends CommonMethods {
     @FindBy(id = "btnSave")
     public WebElement saveButton;
 
-
     @FindBy (id = "menu_admin_membership")
     public WebElement qualificationMembership;
 

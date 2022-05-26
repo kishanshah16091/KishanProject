@@ -7,12 +7,12 @@ Feature: As an admin I should be able to add employee's Skills in qualifications
     * selects first employee
 
 
-  @test
+  @test @skills
   Scenario: Add employee's skills
     Given user navigates to Qualifications
     And clicks Add under Skills Box
     When user able to fill out skill field
-    Then  clicks on save button
+    Then  saves the skill
 
 
 
