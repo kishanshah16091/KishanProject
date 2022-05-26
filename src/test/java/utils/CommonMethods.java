@@ -1,5 +1,4 @@
 package utils;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -101,7 +100,38 @@ public class CommonMethods extends PageInitializers {
         return sdf.format(date);
 
     }
+    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
 
+    public static void moveToElement(WebElement element) {
+        Actions moveTo = new Actions(driver);
+        moveTo.moveToElement(element);
+
+    }
+
+
+// this method first click on admin sidebar then it loops through sidebar tabs and navigates to the desired subtab
+// if it matches then it clicks on the desired sidetab (jobs, nationalities,qualification, configuration, )
+
+    public static void adminSubTabs(String value) {
+        click(qualificationsPage.adminTab);
+        List<WebElement> list = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li"));
+        for (WebElement subTab : list) {
+            String text = subTab.getText();
+            if (text.equals(value)) {
+                subTab.click();
+                break;
+            }
+        }
+    }
+
+
+    public static void selectDdValue(WebElement element, int index) {
+        Select select = new Select(element);
+        int size = select.getOptions().size();
+        if (size > index) {
+            select.selectByIndex(index);
+        }
+    }
     public static void selectDdValue(WebElement element, String textToSelect) {
         Select select = new Select(element);
         List<WebElement> options = select.getOptions();
@@ -112,29 +142,15 @@ public class CommonMethods extends PageInitializers {
             }
         }
     }
-    // select dropDown by index
-    public static void selectDdValue(WebElement element, int index) {
-        Select select = new Select(element);
-        int size = select.getOptions().size();
-        if (size>index) {
-            select.selectByIndex(index);
-        }
-    }
-
-    public static void moveToElement (WebElement element){
-        Actions moveTo = new Actions(driver);
-        moveTo.moveToElement(element);
-
-    }
 
     // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
-    public static void selectingDDQualification (String desiredQualification) {
+    public static void selectingDDQualification(String desiredQualification) {
         List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
         for (WebElement qualification : qualificationDD) {
-            String text= qualification.getText();
+            String text = qualification.getText();
             System.out.println(text);
             if (qualification.getText().equals(desiredQualification)) {
-                text= qualification.getText();
+                text = qualification.getText();
                 qualification.click();
                 // click(qualification);
                 break;
@@ -143,9 +159,28 @@ public class CommonMethods extends PageInitializers {
 
         }
     }
+    //handling calendars
 
-    public static void select(){
-        List<WebElement> qualificationsOptions = driver.findElements(By.tagName("a"));
+    public static void selectDay(List<WebElement> listOfDays, String desiredDay) {
+        for (WebElement day : listOfDays) {
+            String dayText = day.getText();
+            if (dayText.equals(desiredDay)) {
+                day.click();
+                break;
+            }
+        }
     }
 
+    public static void handlingCalendar(List<WebElement> listOfDays, String desiredDay, WebElement monthElement, String month, WebElement yearElement, String year) {
+        for (WebElement day : listOfDays) {
+            String dayText = day.getText();
+            if (dayText.equals(desiredDay)) {
+                day.click();
+                break;
+            }
+        }
+        selectDdValue(monthElement, month);
+        selectDdValue(yearElement, year);
+
+    }
 }

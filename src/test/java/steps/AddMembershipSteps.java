@@ -7,17 +7,6 @@ import utils.CommonMethods;
 
 public class AddMembershipSteps extends CommonMethods {
 
-    @Given("navigates to PIM option and click EmployeeList")
-    public void navigates_to_pim_option_and_click_employee_list() {
-        click(addmembershipPage.pimOption);
-        click(addmembershipPage.employeeList);
-    }
-
-    @Given("selects first employee")
-    public void selects_first_employee() {
-        click(addmembershipPage.firstName);
-    }
-
     @When("click the membership option")
     public void click_the_membership_option() {
         click(addmembershipPage.membershipButton);

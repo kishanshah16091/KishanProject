@@ -8,7 +8,7 @@ Feature: Adding membership to the employee
     * navigates to PIM option and click EmployeeList
     * selects first employee
 
-  @test
+  @Kishan
   Scenario Outline: Adding membership to the employee
     When click the membership option
     And click the add button
