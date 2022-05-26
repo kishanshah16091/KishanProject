@@ -1,5 +1,4 @@
 package utils;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -70,7 +69,9 @@ public class CommonMethods extends PageInitializers {
         getJSExecutor().executeScript("arguments[0].click();", element);
     }
 
-
+    public static void tearDown() {
+        driver.quit();
+    }
 
     // method to take screenshot
     // cucumber accepts array of byte to take a screenshot
@@ -178,4 +179,3 @@ public class CommonMethods extends PageInitializers {
 
     }
 }
-

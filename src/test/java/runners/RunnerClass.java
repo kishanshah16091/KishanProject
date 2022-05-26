@@ -6,9 +6,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions (
+@CucumberOptions(
 
-        features="src/test/resources/features/",
+        features = "src/test/resources/features/",
 
         glue = "steps",
 
@@ -16,9 +16,9 @@ import org.junit.runner.RunWith;
 
         monochrome = true,
 
-        tags =  "@test",
+        tags = "@test",
 
-        plugin= {
+        plugin = {
                 "html:target/cucumber.html", "pretty", "json:target/cucumber.json",
                 "rerun:target/failed.txt"
         }

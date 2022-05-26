@@ -17,17 +17,6 @@ public class AdminAddEmpSkillsSteps extends CommonMethods {
         click(adminAddEmpSkillsPage.firstUser);
     }
 
-    //@When("user navigates to PIM option and clicks on EmployeeList")
-  ///  public void user_Navigates_To_PIM_Option_And_Clicks_On_EmployeeList() {
-       /// click(adminAddEmpSkillsPage.pimOption);
-       // click(adminAddEmpSkillsPage.employeeList);
-   // }
-
-    //@Then("user selects the first employee")
-  //  public void user_Selects_The_First_Employee() {
-        //click(adminAddEmpSkillsPage.firstUser);
-   // }
-
     @Given("user navigates to Qualifications")
     public void user_navigates_to_qualifications() {
         click(adminAddEmpSkillsPage.qualificationButton);

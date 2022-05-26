@@ -1,43 +1,43 @@
 package steps;
-
-
 import pages.AdminAddEmpSkillsPage;
-
+import pages.AddNewLanguagesPage;
+import pages.*;
 import pages.AddWorkExperiencePage;
 import pages.DashboardPage;
+import pages.ContactDetailsPage;
+import pages.EmergencyContactPage;
 import pages.LoginPage;
 import pages.QualificationsPage;
+import pages.AddDependentsPage;
 
 public class PageInitializers {
-
     public static AddWorkExperiencePage workExperiencePage;
-
-    // this is were we create objects of all pages and we initialize them
-    // this page is in inheritance with common method --- common method extends PageInitializers
-
     public static LoginPage login;
     public static QualificationsPage qualificationsPage;
     public static DashboardPage dash;
     public static AdminAddEmpSkillsPage adminAddEmpSkillsPage;
-
+    public static EmployeeSearchPage employeeSearchPage;
+    public static AddMembershipPage addmembershipPage;
+    public static ContactDetailsPage contactDetailsPage;
+    public static EmergencyContactPage emergencyContactPage;
+    public static AddDependentsPage addDependents;
+    public static AddNewLanguagesPage addNewLanguagesPage;
 
     public static void intializePageObjects() {
-        workExperiencePage = new AddWorkExperiencePage();
-
         login = new LoginPage();
-        /*
         employeeSearchPage = new EmployeeSearchPage();
-        addEmployeePage = new AddEmployeePage();
-
-         */
+        addmembershipPage = new AddMembershipPage();
         dash = new DashboardPage();
+
       //  employeeProfilePage = new EmployeeProfilePage;
-        qualificationsPage =new QualificationsPage(); // Zulfiya
-
-        qualificationsPage =new QualificationsPage();
-
         adminAddEmpSkillsPage = new AdminAddEmpSkillsPage();
-
+        qualificationsPage=new QualificationsPage();
+        addNewLanguagesPage=new AddNewLanguagesPage();
+        contactDetailsPage = new ContactDetailsPage();
+        emergencyContactPage = new EmergencyContactPage();
+        workExperiencePage = new AddWorkExperiencePage();
+        addDependents = new AddDependentsPage();
+        qualificationsPage = new QualificationsPage();
 
     }
 }
