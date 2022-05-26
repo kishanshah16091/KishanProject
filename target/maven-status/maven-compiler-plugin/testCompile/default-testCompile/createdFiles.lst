@@ -1,0 +1,6 @@
+steps\AddWorkExperienceSteps.class
+steps\AdminAddLicenseSteps.class
+pages\QualificationsPage.class
+pages\AddWorkExperiencePage.class
+steps\AddingQualificationsSteps.class
+pages\EmployeeProfilePage.class

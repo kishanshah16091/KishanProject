@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\utils\Constants.java
 C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\steps\LoginSteps.java
 C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\pages\EmergencyContactPage.java
@@ -15,3 +16,21 @@ C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\pages\
 C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\steps\ContactDetailsSteps.java
 C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\test.java
 C:\Users\gulum\OneDrive\Desktop\GroupProject10Clone\Group10\src\test\java\utils\ConfigReader.java
+=======
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\runners\FailedRunner.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\steps\AddDependentsSteps.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\steps\DashBoardSteps.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\utils\Constants.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\steps\Hooks.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\pages\LoginPage.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\steps\PageInitializers.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\runners\RunnerClass.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\utils\CommonMethods.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\pages\DashboardPage.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\pages\AddDependentsPage.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\runners\Regression.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\steps\LoginSteps.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\runners\Smoke.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\utils\ConfigReader.java
+C:\Users\only_\Desktop\ImranUpdate\Group10\src\test\java\test.java
+>>>>>>> bd18271efb1c036a37c20e98ae0900bde12e48c4
