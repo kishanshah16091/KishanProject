@@ -10,7 +10,7 @@ Feature:As an admin I should be able to change employee's contact details
     And user clicks on search button
     Then user is able to see employee information
     And user click on searched employee
-    @testRun1
+    @test
     Scenario:
       Given  user clicks on contact details and click on edit button
       And user add employees and verify they are added

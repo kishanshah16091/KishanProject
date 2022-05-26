@@ -12,7 +12,7 @@ Feature:As an admin I should be able to add employee's Emergency Contacts
     And user click on searched employee
 
 
-    @testRun2
+    @test
     Scenario:
       Given user clicks on  Emergency contact details and click on add button
       And user send Emergency Details

@@ -71,7 +71,7 @@ public class CommonMethods extends PageInitializers {
 
     public static void tearDown() {
         driver.quit();
-    }
+}
 
 
     // method to take screenshot
