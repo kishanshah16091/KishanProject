@@ -8,16 +8,11 @@ public class QualificationsSteps extends CommonMethods {
     @When("user navigate to Admin tab")
     public void user_navigate_to_admin_tab() {
      click(qualificationsPage.adminTab);
-    }
-
-    @When("user moves to Qualifications tab")
-    public void user_moves_to_qualifications_tab() {
-        actions.moveToElement(qualificationsPage.qualificationTab).build().perform();
+     click(qualificationsPage.qualificationTab);
     }
 
     @When("user clicks on Languages")
     public void user_clicks_on_languages() {
-
         click(qualificationsPage.languageTab);
     }
 

@@ -8,7 +8,6 @@ Feature:  Adding information under qualifications : user story 11
 
   @test
   Scenario:Adding Any Language
-    Given user moves to Qualifications tab
     And user clicks on Languages
     And user is able to clicks on Add button
     And user can add any Languages

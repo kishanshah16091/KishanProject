@@ -1,36 +1,14 @@
 package steps;
-
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import utils.CommonMethods;
 
 public class AddNewLanguagesSteps extends CommonMethods {
-    @When("user clicks on PIM option")
-    public void user_clicks_on_pim_option() {
-       click(addNewLanguagesPage.pimOption);
-    }
-
-    @When("user clicks on Employee List option")
-    public void user_clicks_on_employee_list_option() {
-       click(addNewLanguagesPage.empListOption);
-    }
-
-    @When("user enters valid employee id")
-    public void user_enters_valid_employee_id() {
-        sendText(addNewLanguagesPage.idField,"7908464");
-    }
-
-    @When("user clicks on search button")
-    public void user_clicks_on_search_button() {
-        click(addNewLanguagesPage.searchButton);
-    }
 
     @When("user choose the employee name and clicks on it")
     public void user_choose_the_employee_name_and_clicks_on_it() {
         click(addNewLanguagesPage.employeeName);
-
     }
 
     @When("user clicks on Qualifications")

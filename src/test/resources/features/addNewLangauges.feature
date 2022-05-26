@@ -7,7 +7,6 @@ Feature: Adding any languages for any employees in Qualifications:
     When user clicks on PIM option
   @test
   Scenario:Adding any languages for any employees
-    And user clicks on Employee List option
     And user enters valid employee id
     And user clicks on search button
     When user choose the employee name and clicks on it
