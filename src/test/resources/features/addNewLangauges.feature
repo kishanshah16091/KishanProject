@@ -1,9 +1,12 @@
 Feature: Adding any languages for any employees in Qualifications:
-  Scenario:add any language to any  employee
+
+  Background:
     When user enters valid admin credentials
     And user clicks on login button
     Then admin user is successfully logged in
     When user clicks on PIM option
+  @test
+  Scenario:Adding any languages for any employees
     And user clicks on Employee List option
     And user enters valid employee id
     And user clicks on search button
