@@ -18,11 +18,6 @@ public class AddWorkExperienceSteps extends CommonMethods {
         click(workExperiencePage.firstUser);
     }
 
-    @Given("user navigates to Qualifications")
-    public void user_navigates_to_qualifications() {
-        click(workExperiencePage.qualificationButton);
-    }
-
     @And("clicks on add work experience button")
     public void clicks_On_Add_Work_Experience_Button() {
         click(workExperiencePage.addWork);

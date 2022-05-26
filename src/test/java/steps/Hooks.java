@@ -15,7 +15,6 @@ public class Hooks extends CommonMethods {
     @After
     public void end(Scenario scenario) {
         byte[] pic;
-        //scenario class from cucumber holds the complete information of our execution
 
         if (scenario.isFailed()) {
             pic = takeScreenshot("failed/" + scenario.getName());

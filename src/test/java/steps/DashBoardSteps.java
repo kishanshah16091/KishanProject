@@ -24,10 +24,6 @@ public class DashBoardSteps extends CommonMethods {
         System.out.print(actualTabs);//coming from my execution
         System.out.print(expectedTabs);//coming from my feature file
 
-        //Assert.assertEquals(actualTabs,expectedTabs);
-
-        //If assertion is passed it will not give yoy any information and will execute our code
-        //
-        Assert.assertTrue(expectedTabs.equals(actualTabs));
+            Assert.assertTrue(expectedTabs.equals(actualTabs));
     }
 }

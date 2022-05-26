@@ -12,10 +12,6 @@ import java.util.Map;
 
 public class EmergencyContactStep extends CommonMethods {
 
-
-
-
-
     @Then("user clicks on  Emergency contact details and click on add button")
     public void user_clicks_on_emergency_contact_details_and_click_on_add_button() {
 
@@ -41,7 +37,6 @@ public class EmergencyContactStep extends CommonMethods {
         }
 
             }
-
 
     @Then("user click on save button")
     public void user_click_on_save_button() {

@@ -1,6 +1,4 @@
-Feature: US - Admin user adding different qualifications
-# As an admin user should be able to add different memberships under qualifications
-
+Feature: Admin user adding different qualifications
 
   Background:
     Given user enters valid admin credentials
@@ -9,14 +7,15 @@ Feature: US - Admin user adding different qualifications
     When user navigates to Qualifications page
 
 
+  @test
+  Scenario: Adding new Skills
+    And   selects skills from dropdown and clicks on it
+    Then  user can add and save any skills
 
    # adding membership qualification by zulfiya
   @membership
   Scenario: Adding new Memberships
     And selects Memberships from the drop-down and clicks on it
     Then user can add and save new Membership
-
-
-
 
 

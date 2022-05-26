@@ -73,7 +73,6 @@ public class CommonMethods extends PageInitializers {
         driver.quit();
     }
 
-
     // method to take screenshot
     // cucumber accepts array of byte to take a screenshot
     // if we want to use the method to take screenshot from cucumber then we should provide byte[]
@@ -100,14 +99,27 @@ public class CommonMethods extends PageInitializers {
         return sdf.format(date);
 
     }
-    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
 
-    public static void moveToElement(WebElement element) {
+    public static void moveToElement (WebElement element){
         Actions moveTo = new Actions(driver);
         moveTo.moveToElement(element);
-
     }
+    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
+    public static void selectingDDQualification (String desiredQualification) {
+        List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
+        for (WebElement qualification : qualificationDD) {
+            String text= qualification.getText();
+            System.out.println(text);
+            if (qualification.getText().equals(desiredQualification)) {
+                text= qualification.getText();
+                qualification.click();
+                // click(qualification);
+                break;
 
+            }
+
+        }
+    }
 
 // this method first click on admin sidebar then it loops through sidebar tabs and navigates to the desired subtab
 // if it matches then it clicks on the desired sidetab (jobs, nationalities,qualification, configuration, )
@@ -132,6 +144,7 @@ public class CommonMethods extends PageInitializers {
             select.selectByIndex(index);
         }
     }
+
     public static void selectDdValue(WebElement element, String textToSelect) {
         Select select = new Select(element);
         List<WebElement> options = select.getOptions();
@@ -142,25 +155,7 @@ public class CommonMethods extends PageInitializers {
             }
         }
     }
-
-    // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
-    public static void selectingDDQualification(String desiredQualification) {
-        List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
-        for (WebElement qualification : qualificationDD) {
-            String text = qualification.getText();
-            System.out.println(text);
-            if (qualification.getText().equals(desiredQualification)) {
-                text = qualification.getText();
-                qualification.click();
-                // click(qualification);
-                break;
-
-            }
-
-        }
-    }
     //handling calendars
-
     public static void selectDay(List<WebElement> listOfDays, String desiredDay) {
         for (WebElement day : listOfDays) {
             String dayText = day.getText();

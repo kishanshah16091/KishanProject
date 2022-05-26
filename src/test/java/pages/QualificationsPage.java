@@ -6,6 +6,8 @@ import utils.CommonMethods;
 
 public class QualificationsPage extends CommonMethods {
 
+  //  @FindBy(id = "menu_admin_viewAdminModule")
+
     @FindBy(xpath = "//b[text()='Admin']")
     public WebElement adminTab;
 
@@ -43,9 +45,18 @@ public class QualificationsPage extends CommonMethods {
     @FindBy(id = "menu_admin_viewLicenses")
     public WebElement licensesSub;
 
+    @FindBy(id = "skill_name")
+    public WebElement skillTextBox;
+
+    @FindBy(xpath = "//*[@id=\"recordsListTable\"]/tbody/tr[1]/td[1]/input")
+    public WebElement skillCheckBox;
+
+    @FindBy (id = "btnDel")
+    public WebElement deleteBtn;
 
     public QualificationsPage() {
         PageFactory.initElements(driver, this);
     }
 }
+
 

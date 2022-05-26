@@ -5,15 +5,7 @@ import io.cucumber.java.en.When;
 import utils.CommonMethods;
 
 public class AddingQualificationsSteps extends CommonMethods {
-    @When("user navigates to Qualifications page")
-    public void user_navigates_to_qualifications_page() {
-      //  click(qualificationsPage.adminTab);
-        adminSubTabs("Qualifications");
 
-
-   // moveToElement(qualificationsPage.adminTab);
-   // click(qualificationsPage.qualificationTab);
-    }
     @When("selects Memberships from the drop-down and clicks on it")
     public void selects_memberships_from_the_drop_down_and_clicks_on_it() {
 

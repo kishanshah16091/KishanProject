@@ -8,21 +8,10 @@ import utils.CommonMethods;
 
 public class AddDependentsSteps extends CommonMethods {
 
-    @Given("navigates to PIM option and click EmployeeList")
-    public void navigates_to_pim_option_and_click_employee_list() {
-        click(addDependents.pimOption);
-        click(addDependents.employeeList);
-    }
-    @Given("selects first employee")
-    public void selects_first_employee() {
-      click(addDependents.firstName);
-
-    }
     @Then("select Dependends")
     public void select_dependends() {
      click(addDependents.DsideBar);
     }
-
 
     @Then("clicks on add button")
     public void clicks_on_add_button() {
@@ -31,8 +20,7 @@ public class AddDependentsSteps extends CommonMethods {
     @When("admin user able to add all dependent details")
     public void admin_user_able_to_add_all_dependent_details() {
        sendText(addDependents.dependentName,"Khattak");
-      //sendText(addDependents.relationship,"Child");
-        //selectDdValue(addDependents.relationship,"Child");
+
         selectDdValue(addDependents.relationship,1);
 
         click(addDependents.BDate);
