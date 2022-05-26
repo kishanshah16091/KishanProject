@@ -1,6 +1,5 @@
 package steps;
-
-
+import pages.AddNewLanguagesPage;
 import pages.*;
 import pages.AddWorkExperiencePage;
 import pages.DashboardPage;
@@ -11,7 +10,6 @@ import pages.QualificationsPage;
 import pages.AddDependentsPage;
 
 public class PageInitializers {
-
     public static AddWorkExperiencePage workExperiencePage;
     public static LoginPage login;
     public static EmployeeSearchPage employeeSearchPage;
@@ -21,13 +19,14 @@ public class PageInitializers {
     public static AddDependentsPage addDependents;
     public static DashboardPage dash;
     public static QualificationsPage qualificationsPage;
-
-
+    public static AddNewLanguagesPage addNewLanguagesPage;
     public static void intializePageObjects() {
         login = new LoginPage();
         employeeSearchPage = new EmployeeSearchPage();
         addmembershipPage = new AddMembershipPage();
         dash = new DashboardPage();
+        qualificationsPage=new QualificationsPage();
+        addNewLanguagesPage=new AddNewLanguagesPage();
         contactDetailsPage = new ContactDetailsPage();
         emergencyContactPage = new EmergencyContactPage();
         workExperiencePage = new AddWorkExperiencePage();
