@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+target/**
+target/
+screenshots/**
+screenshots/
+=======
 /target
 target
 /screenshots
 screenshots
+>>>>>>> bd18271efb1c036a37c20e98ae0900bde12e48c4
