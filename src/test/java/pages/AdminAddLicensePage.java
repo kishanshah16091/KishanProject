@@ -10,46 +10,44 @@ import static utils.CommonMethods.driver;
 
 public class AdminAddLicensePage {
 
-    @FindBy(xpath = "//*[@id = 'menu_pim_viewPimModule']")
+    @FindBy(xpath="//*[@id = 'menu_pim_viewPimModule']")
     public WebElement pimOption;
 
-    @FindBy(xpath = "//*[@id = 'menu_pim_viewEmployeeList']")
+    @FindBy(xpath="//*[@id = 'menu_pim_viewEmployeeList']")
     public WebElement employeeList;
 
-    @FindBy(xpath = "//*[@id='resultTable']/tbody/tr[1]/td[2]/a")
+    @FindBy(xpath="//*[@id='resultTable']/tbody/tr[1]/td[2]/a")
     public WebElement firstUser;
 
-    @FindBy ( xpath = "//*[@id='sidenav']/li[10]/a")
+    @FindBy ( xpath="//*[@id='sidenav']/li[10]/a")
     public WebElement qualificationOption;
 
-    @FindBy (xpath = "//*[@id='addLicense']")
+    @FindBy (xpath="//*[@id='addLicense']")
     public WebElement addLicenceButton;
 
-    @FindBy (xpath = "//*[@id='license_code']")
+    @FindBy (xpath="//*[@id='license_code']")
     public WebElement licenseType;
 
-    @FindBy (xpath = "//*[@id='license_license_no']")
+    @FindBy (xpath="//*[@id='license_license_no']")
     public WebElement licenseNumber;
 
-    @FindBy (xpath = "//*[@id = 'license_date']")
+    @FindBy (xpath="//*[@id = 'license_date']")
     public WebElement issueDate;
-    @FindBy (xpath = "//*[@id='ui-datepicker-div']/div/div/select[1]")
+    @FindBy (xpath="//*[@id='ui-datepicker-div']/div/div/select[1]")
     public WebElement calendarMonth;
 
-    @FindBy (xpath = "//*[@id='ui-datepicker-div']/div/div/select[2]")
+    @FindBy (xpath="//*[@id='ui-datepicker-div']/div/div/select[2]")
     public WebElement calendarYear;
 
 
-    @FindBy (xpath = "//*[@id='license_renewal_date']")
+    @FindBy (xpath="//*[@id='license_renewal_date']")
     public WebElement expiryDate;
 
-    @FindBy (xpath = "//*[@id='btnLicenseSave']")
+    @FindBy (xpath="//*[@id='btnLicenseSave']")
     public WebElement saveButton;
 
-    @FindBy(xpath = " //*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td")
+    @FindBy(xpath="//*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td")
     public List<WebElement> calendarDays;
-
-
 
     public AdminAddLicensePage(){
         PageFactory.initElements(driver, this);
