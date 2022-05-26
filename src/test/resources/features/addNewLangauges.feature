@@ -8,7 +8,7 @@ Feature: Adding any languages for any employees in Qualifications:
   @test
   Scenario:Adding any languages for any employees
     And user enters valid employee id
-    And user clicks on search button
+    #And user clicks on search button
     When user choose the employee name and clicks on it
     And user clicks on Qualifications
     And user clicks on Add button

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
 public class LoginPage extends CommonMethods {
-    // object repository
+
     @FindBy(id="txtUsername")
     public WebElement usernameBox;
 
@@ -19,9 +19,6 @@ public class LoginPage extends CommonMethods {
    @FindBy(id="spanMessage")
    public WebElement errorMessage;
 
-    // called all these elements in the constructor --- pageFactory concept from selenium
-    // if we dont use page factory concept we wont be able to initialize all the elements o the class
-    // later on we will add different functions
    public LoginPage() {
        PageFactory.initElements(driver, this);
    }

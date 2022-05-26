@@ -37,9 +37,9 @@ public class AddWorkExperienceSteps extends CommonMethods {
         sendText(workExperiencePage.addComment,"Shows Great Effort");
     }
 
-    @Then("user clicks on save button")
+  /*  @Then("user clicks on save button")
     public void user_Clicks_On_Save_Button() {
         click(workExperiencePage.saveButton);
-    }
+    }*/
 
 }

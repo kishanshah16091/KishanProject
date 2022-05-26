@@ -177,5 +177,18 @@ public class CommonMethods extends PageInitializers {
         selectDdValue(monthElement, month);
         selectDdValue(yearElement, year);
 
+
+
+    }
+//    maybe it is duplicated check later
+    public static void chooseDate(List<WebElement> dates, String dateNumber) {
+        for (WebElement date : dates) {
+            String dateTest=date.getText();
+            if (dateTest.equals(dateNumber))
+            {
+                date.click();
+                break;            }
+        }
     }
 }
+

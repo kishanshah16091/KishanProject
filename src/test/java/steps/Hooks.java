@@ -16,10 +16,10 @@ public class Hooks extends CommonMethods {
     public void end(Scenario scenario) {
         byte[] pic;
 
-        if (scenario.isFailed()) {
-            pic = takeScreenshot("failed/" + scenario.getName());
-        } else {
-            pic = takeScreenshot("passed/" + scenario.getName());
+        if(scenario.isFailed()) {
+            pic=takeScreenshot("failed/" + scenario.getName());
+        }else {
+            pic=takeScreenshot("passed/" + scenario.getName());
         }
         // it will attach the pic in the report
         scenario.attach(pic, "image/png", scenario.getName());

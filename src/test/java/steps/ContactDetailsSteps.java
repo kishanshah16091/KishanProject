@@ -19,7 +19,6 @@ public class ContactDetailsSteps extends CommonMethods {
         openBrowserAndLauchApplication();
     }
 
-
         @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
         click(contactDetailsPage.pimOption);
@@ -27,9 +26,7 @@ public class ContactDetailsSteps extends CommonMethods {
 
     @When("user navigated to employee list page")
     public void user_navigated_to_employee_list_page() {
-       WebElement pimOption = driver.findElement(By.id("menu_pim_viewPimModule"));
-       click(contactDetailsPage.pimOption);
-       click(contactDetailsPage.empListOption);
+        click(contactDetailsPage.empListOption);
     }
     @When("user enters valid employee id")
     public void user_enters_valid_employee_id() {

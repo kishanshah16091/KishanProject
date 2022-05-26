@@ -12,4 +12,4 @@ Feature: As an admin I should be able to add employee's Work Experience in quali
     Given user navigates to Qualifications
     And clicks on add work experience button
     When user fills out all the required fields
-    Then user clicks on save button
+   # Then user clicks on save button

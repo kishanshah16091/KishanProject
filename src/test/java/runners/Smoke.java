@@ -22,7 +22,8 @@ import org.junit.runner.RunWith;
         monochrome = true,
         // tags will inteitfy the scenario based on the tag we provide in the feature file
 
-        tags = "@test"
+        tags="@JobDetails"
+
 )
 
 
