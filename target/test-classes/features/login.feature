@@ -3,7 +3,6 @@ Feature: Validation of login scenarios
   Background:
     #Given user is navigated to HRMS application
 
-
 @test
   Scenario: Admin login
     #Given user is navigated to HRMS application

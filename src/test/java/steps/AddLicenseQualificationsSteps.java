@@ -18,13 +18,13 @@ public class AddLicenseQualificationsSteps extends CommonMethods {
 
     @When("clicks on add button and fill the name box")
     public void clicks_on_add_button_and_fill_the_name_box() {
-        click(qualificationsPage.addButton);
-        sendText(qualificationsPage.licenseName, "Merjen");
+        click(addLicenseQualificationsPage.addButton);
+        sendText(addLicenseQualificationsPage.licenseName, "Merjen");
     }
 
    @Then("Admin can add licence and confirm message is displayed")
   public void admin_can_add_licence_and_confirm_message_is_displayed() {
-      click(qualificationsPage.saveButton);
+      click(addLicenseQualificationsPage.saveButton);
    }
 
 }

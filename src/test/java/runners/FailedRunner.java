@@ -37,13 +37,11 @@ import org.junit.runner.RunWith;
 
         // json java script object notation a different language - for reporting
         // rerun  - will create a failed txt file
-        plugin= {
+        plugin={
                 "pretty",
         }
 
 )
-
-
 
 public class FailedRunner {
 }

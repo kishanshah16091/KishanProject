@@ -100,18 +100,19 @@ public class CommonMethods extends PageInitializers {
 
     }
 
-    public static void moveToElement (WebElement element){
+    public static void moveToElement(WebElement element) {
         Actions moveTo = new Actions(driver);
         moveTo.moveToElement(element);
     }
+
     // this method is giving you options from the qualifications drop-down tab  (skills, membership, language, license, education
-    public static void selectingDDQualification (String desiredQualification) {
+    public static void selectingDDQualification(String desiredQualification) {
         List<WebElement> qualificationDD = driver.findElements(By.xpath("//*[@id=\"wrapper\"]/div[2]/ul/li[1]/ul/li[4]/ul/li/a"));
         for (WebElement qualification : qualificationDD) {
-            String text= qualification.getText();
+            String text = qualification.getText();
             System.out.println(text);
             if (qualification.getText().equals(desiredQualification)) {
-                text= qualification.getText();
+                text = qualification.getText();
                 qualification.click();
                 // click(qualification);
                 break;
@@ -155,6 +156,7 @@ public class CommonMethods extends PageInitializers {
             }
         }
     }
+
     //handling calendars
     public static void selectDay(List<WebElement> listOfDays, String desiredDay) {
         for (WebElement day : listOfDays) {
@@ -178,16 +180,16 @@ public class CommonMethods extends PageInitializers {
         selectDdValue(yearElement, year);
 
 
-
     }
-    //    maybe it is duplicated check later
+
     public static void chooseDate(List<WebElement> dates, String dateNumber) {
         for (WebElement date : dates) {
-            String dateTest=date.getText();
-            if (dateTest.equals(dateNumber))
-            {
+            String dateTest = date.getText();
+            if (dateTest.equals(dateNumber)) {
                 date.click();
-                break;            }
+                break;
+            }
         }
     }
 }
+

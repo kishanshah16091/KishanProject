@@ -8,7 +8,8 @@ import java.util.Properties;
 public class ConfigReader {
     static Properties prop;
 
-    public static Properties readProperties(String filePath){
+    //this method will read any property file
+    public static Properties readProperties(String filePath) {
         try {
             FileInputStream fis = new FileInputStream(filePath);
             prop = new Properties();
@@ -20,8 +21,9 @@ public class ConfigReader {
         }
         return prop;
     }
-    public static String getPropertyValue(String key){
+
+    //this method get single value based on the key
+    public static String getPropertyValue(String key) {
         return prop.getProperty(key);
     }
-
 }

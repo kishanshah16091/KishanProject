@@ -8,8 +8,9 @@ import io.cucumber.junit.Cucumber;import io.cucumber.junit.CucumberOptions;impor
         dryRun = false,
         monochrome = true,
         tags ="@test",
-        plugin = {                "html:target/cucumber.html", "pretty", "json:target/cucumber.json",                "rerun:target/failed.txt"        }
+        plugin = {
+                "html:target/cucumber.html", "pretty", "json:target/cucumber.json",
+                "rerun:target/failed.txt"        }
 )
 public class RunnerClass {
-
 }

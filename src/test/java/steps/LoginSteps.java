@@ -5,7 +5,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import utils.CommonMethods;
 
-public class LoginSteps extends CommonMethods {
+    public class LoginSteps extends CommonMethods {
     @When("user enters valid admin credentials")
     public void user_enters_valid_admin_credentials() {
         sendText(login.usernameBox, "Admin");
@@ -19,6 +19,7 @@ public class LoginSteps extends CommonMethods {
 
     @Then("admin user is successfully logged in")
     public void admin_user_is_successfully_logged_in() {
+
         Assert.assertTrue(dash.welcomeMessage.isDisplayed());
     }
 
