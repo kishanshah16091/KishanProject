@@ -17,7 +17,7 @@ public class AdminAddEmpSkillsPage extends CommonMethods {
     @FindBy(xpath = "//*[@id='resultTable']/tbody/tr[1]/td[2]/a")
     public WebElement firstUser;
 
-    @FindBy( linkText = "Qualifications")
+    @FindBy(linkText = "Qualifications")
     public WebElement qualificationButton;
 
     @FindBy (id = "addSkill")

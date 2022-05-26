@@ -1,11 +1,10 @@
 package steps;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.CommonMethods;
 
-public class AddingSkills extends CommonMethods {
+public class AddingSkillsSteps extends CommonMethods {
 
     @When("user navigates to Qualifications page")
     public void user_navigates_to_qualifications_page() {

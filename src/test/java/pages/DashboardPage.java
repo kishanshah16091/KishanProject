@@ -18,6 +18,4 @@ public class DashboardPage extends CommonMethods {
     public DashboardPage(){
         PageFactory.initElements(driver, this);
     }
-
-
 }

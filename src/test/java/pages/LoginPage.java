@@ -13,10 +13,10 @@ public class LoginPage extends CommonMethods {
    @FindBy(name="txtPassword")
     public WebElement passwordBox;
 
-   @FindBy (id= "btnLogin")
+   @FindBy(id="btnLogin")
     public WebElement loginBtn;
 
-   @FindBy(id= "spanMessage")
+   @FindBy(id="spanMessage")
    public WebElement errorMessage;
 
     // called all these elements in the constructor --- pageFactory concept from selenium

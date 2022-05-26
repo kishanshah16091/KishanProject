@@ -42,5 +42,4 @@ public class QualificationsPage extends CommonMethods {
     public QualificationsPage(){
         PageFactory.initElements(driver,this);
     }
-
 }
