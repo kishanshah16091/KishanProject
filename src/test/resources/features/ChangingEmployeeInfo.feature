@@ -3,7 +3,6 @@ Feature: Changing employee's contact details and emergency contacts
   Background:
     When user enters valid admin credentials
     And user clicks on login button
-    Then admin user is successfully logged in
     When user navigates to PIM and Employee list
     Then user search for employee by employee id "7908464"
     And user clicks on search button

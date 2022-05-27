@@ -3,7 +3,6 @@ Feature: Adding membership and dependents to the employee
   Background:
     * user enters valid admin credentials
     * user clicks on login button
-    * admin user is successfully logged in
     * navigates to PIM option and click EmployeeList
     * selects first employee
 

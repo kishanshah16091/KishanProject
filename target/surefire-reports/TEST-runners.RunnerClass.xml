@@ -1,84 +1,446 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RunnerClass" time="14.778" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RunnerClass" time="294.093" tests="15" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="17"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/april/Desktop/YazgulEsen/Group10/target/test-classes:/Users/april/Desktop/YazgulEsen/Group10/target/classes:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/april/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/april/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/april/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/april/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/april/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/april/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/april/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/april/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/april/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/april/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/april/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/april/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/april/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/april/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/april/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/april/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/april/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.0/webdrivermanager-5.1.0.jar:/Users/april/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/april/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/april/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/april/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/april/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/april/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/april/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/april/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/april/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/april/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/april/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/april/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/april/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/april/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/april/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/april/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/april/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/april/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/april/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/april/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/april/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/april/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/april/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/april/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:"/>
+    <property name="java.class.path" value="/Users/zulfiyaa/Desktop/Group10Framework/Group10/target/test-classes:/Users/zulfiyaa/Desktop/Group10Framework/Group10/target/classes:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/zulfiyaa/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/zulfiyaa/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/zulfiyaa/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/zulfiyaa/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/zulfiyaa/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/zulfiyaa/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/zulfiyaa/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/zulfiyaa/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/zulfiyaa/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/zulfiyaa/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/zulfiyaa/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/zulfiyaa/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/zulfiyaa/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.0/webdrivermanager-5.1.0.jar:/Users/zulfiyaa/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/zulfiyaa/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/zulfiyaa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/zulfiyaa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/zulfiyaa/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/zulfiyaa/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/zulfiyaa/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/zulfiyaa/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/zulfiyaa/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/zulfiyaa/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/zulfiyaa/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/zulfiyaa/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/zulfiyaa/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/zulfiyaa/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/zulfiyaa/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/zulfiyaa/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="17"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/april/Desktop/YazgulEsen/Group10/target/surefire/surefirebooter5617080089496809762.jar /Users/april/Desktop/YazgulEsen/Group10/target/surefire 2022-05-24T23-04-52_947-jvmRun1 surefire14395830550797498272tmp surefire_010914514096796941526tmp"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/zulfiyaa/Desktop/Group10Framework/Group10/target/surefire/surefirebooter8560950797152157140.jar /Users/zulfiyaa/Desktop/Group10Framework/Group10/target/surefire 2022-05-26T17-07-52_857-jvmRun1 surefire7546446204584077139tmp surefire_03571026752277889866tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/april/Desktop/YazgulEsen/Group10/target/test-classes:/Users/april/Desktop/YazgulEsen/Group10/target/classes:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/april/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/april/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/april/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/april/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/april/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/april/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/april/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/april/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/april/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/april/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/april/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/april/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/april/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/april/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/april/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/april/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/april/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/april/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/april/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/april/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.0/webdrivermanager-5.1.0.jar:/Users/april/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/april/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/april/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/april/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/april/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/april/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/april/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/april/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/april/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/april/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/april/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/april/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/april/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/april/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/april/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/april/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/april/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/april/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/april/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/april/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/april/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/april/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/april/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/april/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/april/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/zulfiyaa/Desktop/Group10Framework/Group10/target/test-classes:/Users/zulfiyaa/Desktop/Group10Framework/Group10/target/classes:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/zulfiyaa/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/zulfiyaa/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/zulfiyaa/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/zulfiyaa/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/zulfiyaa/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/zulfiyaa/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/zulfiyaa/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/zulfiyaa/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/zulfiyaa/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/zulfiyaa/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/zulfiyaa/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/zulfiyaa/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/zulfiyaa/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/zulfiyaa/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/zulfiyaa/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.0/webdrivermanager-5.1.0.jar:/Users/zulfiyaa/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/zulfiyaa/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/zulfiyaa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/zulfiyaa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/zulfiyaa/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/zulfiyaa/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/zulfiyaa/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/zulfiyaa/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/zulfiyaa/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/zulfiyaa/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/zulfiyaa/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/zulfiyaa/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/zulfiyaa/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/zulfiyaa/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/zulfiyaa/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/zulfiyaa/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/zulfiyaa/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/zulfiyaa/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/zulfiyaa/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/april"/>
+    <property name="user.home" value="/Users/zulfiyaa"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2021-10-19"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/zulfiyaa/Desktop/Group10Framework/Group10"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/april/Desktop/YazgulEsen/Group10"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/april/Desktop/YazgulEsen/Group10/target/surefire/surefirebooter5617080089496809762.jar"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/zulfiyaa/Desktop/Group10Framework/Group10/target/surefire/surefirebooter8560950797152157140.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
-    <property name="user.name" value="april"/>
+    <property name="java.runtime.version" value="1.8.0_301-b09"/>
+    <property name="user.name" value="zulfiyaa"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="11.2.3"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="/Users/april/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="/var/folders/5t/jnthxpdx49ncqwt8hsv6jvg40000gn/T/"/>
-    <property name="idea.version" value="2022.1"/>
-    <property name="java.version" value="17.0.1"/>
-    <property name="user.dir" value="/Users/april/Desktop/YazgulEsen/Group10"/>
-    <property name="os.arch" value="aarch64"/>
+    <property name="localRepository" value="/Users/zulfiyaa/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/8g/h1kcwcw942bb4c3w6ws6kc5w0000gn/T/"/>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.version" value="1.8.0_301"/>
+    <property name="user.dir" value="/Users/zulfiyaa/Desktop/Group10Framework/Group10"/>
+    <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/april/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/zulfiyaa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="java.vm.version" value="25.301-b09"/>
+    <property name="java.ext.dirs" value="/Users/zulfiyaa/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Add employee&apos;s licenses" classname="As an admin I should be able to add employee&apos;s licenses in qualifications" time="14.523">
+  <testcase name="Adding employee dependents (US-3)" classname="Adding membership and dependents to the employee" time="20.076">
     <system-out><![CDATA[
-@test @admin
-Scenario: Add employee's licenses                  # src/test/resources/features/AdminAddLicense.feature:11
-  * user enters valid admin credentials            # steps.LoginSteps.user_enters_valid_admin_credentials()
-  * user clicks on login button                    # steps.LoginSteps.user_clicks_on_login_button()
-  * navigates to PIM option and click EmployeeList # steps.AdminAddLicenseSteps.navigates_to_pim_option_and_click_employee_list()
-  * selects first employee                         # steps.AdminAddLicenseSteps.selects_first_employee()
-  Given user navigates to Qualifications           # steps.AdminAddLicenseSteps.user_navigates_to_qualifications()
-  And clicks Add under License Box                 # steps.AdminAddLicenseSteps.clicks_add_under_license_box()
-  When user able to fill out all license fields    # steps.AdminAddLicenseSteps.user_able_to_fill_out_all_license_fields()
-  Then clicks on save button                       # steps.AdminAddLicenseSteps.clicks_on_save_button()
+@test @addDependents
+Scenario: Adding employee dependents (US-3)         # src/test/resources/features/AddMembershipAndDependents.feature:10
+  * user enters valid admin credentials             # steps.LoginSteps.user_enters_valid_admin_credentials()
+  * user clicks on login button                     # steps.LoginSteps.user_clicks_on_login_button()
+  * navigates to PIM option and click EmployeeList  # steps.AddMembershipAndDependentsSteps.navigates_to_pim_option_and_click_employee_list()
+  * selects first employee                          # steps.AddMembershipAndDependentsSteps.selects_first_employee()
+  And select Dependends                             # steps.AddMembershipAndDependentsSteps.select_dependends()
+  And clicks on add button                          # steps.AddMembershipAndDependentsSteps.clicks_on_add_button()
+  When admin user able to add all dependent details # steps.AddMembershipAndDependentsSteps.admin_user_able_to_add_all_dependent_details()
+  Then click save button                            # steps.AddMembershipAndDependentsSteps.click_save_button()
 
-    Embedding Add employee's licenses [image/png 107571 bytes]
+    Embedding Adding employee dependents (US-3) [image/png 294720 bytes]
 
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 19210
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 41929
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 24, 2022 11:04:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 26, 2022 5:07:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding membership to the employee (US-14) #1" classname="Adding membership and dependents to the employee" time="28.392">
+    <system-out><![CDATA[
+@test @addMembership
+Scenario Outline: Adding membership to the employee (US-14)                            # src/test/resources/features/AddMembershipAndDependents.feature:30
+  * user enters valid admin credentials                                                # steps.LoginSteps.user_enters_valid_admin_credentials()
+  * user clicks on login button                                                        # steps.LoginSteps.user_clicks_on_login_button()
+  * navigates to PIM option and click EmployeeList                                     # steps.AddMembershipAndDependentsSteps.navigates_to_pim_option_and_click_employee_list()
+  * selects first employee                                                             # steps.AddMembershipAndDependentsSteps.selects_first_employee()
+  When click the membership option                                                     # steps.AddMembershipAndDependentsSteps.click_the_membership_option()
+  And click the add button                                                             # steps.AddMembershipAndDependentsSteps.click_the_add_button()
+  Then user can select "gold" from drop down list                                      # steps.AddMembershipAndDependentsSteps.user_can_select_membership_from_drop_down_list(java.lang.String)
+  And click on the subscription paid by drop down and select "Company"                 # steps.AddMembershipAndDependentsSteps.click_on_the_subscription_paid_by_drop_down_and_select(java.lang.String)
+  And enters the subscription "200" in the text box                                    # steps.AddMembershipAndDependentsSteps.enters_the_subscription_amount_in_the_text_box(java.lang.String)
+  And click on the currency drop down and select "United States Dollar"                # steps.AddMembershipAndDependentsSteps.click_on_the_currency_drop_down_and_select_the_value(java.lang.String)
+  And click the Subscription Start Date field and select "Jun" "2022"                  # steps.AddMembershipAndDependentsSteps.click_the_subscription_start_date_field_and_select_values(java.lang.String,java.lang.String)
+  And click on the subscription renewal date calendar and select "Jul" "<renewalYear>" # steps.AddMembershipAndDependentsSteps.click_on_the_subscription_renewal_date_calendar_and_select_a_date(java.lang.String,java.lang.String)
+  Then click on save button                                                            # steps.AddMembershipAndDependentsSteps.click_on_save_button()
+
+    Embedding Adding membership to the employee (US-14) [image/png 322024 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 17731
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:08:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding membership to the employee (US-14) #2" classname="Adding membership and dependents to the employee" time="25.626">
+    <system-out><![CDATA[
+@test @addMembership
+Scenario Outline: Adding membership to the employee (US-14)                            # src/test/resources/features/AddMembershipAndDependents.feature:31
+  * user enters valid admin credentials                                                # steps.LoginSteps.user_enters_valid_admin_credentials()
+  * user clicks on login button                                                        # steps.LoginSteps.user_clicks_on_login_button()
+  * navigates to PIM option and click EmployeeList                                     # steps.AddMembershipAndDependentsSteps.navigates_to_pim_option_and_click_employee_list()
+  * selects first employee                                                             # steps.AddMembershipAndDependentsSteps.selects_first_employee()
+  When click the membership option                                                     # steps.AddMembershipAndDependentsSteps.click_the_membership_option()
+  And click the add button                                                             # steps.AddMembershipAndDependentsSteps.click_the_add_button()
+  Then user can select "Gym" from drop down list                                       # steps.AddMembershipAndDependentsSteps.user_can_select_membership_from_drop_down_list(java.lang.String)
+  And click on the subscription paid by drop down and select "Individual"              # steps.AddMembershipAndDependentsSteps.click_on_the_subscription_paid_by_drop_down_and_select(java.lang.String)
+  And enters the subscription "300" in the text box                                    # steps.AddMembershipAndDependentsSteps.enters_the_subscription_amount_in_the_text_box(java.lang.String)
+  And click on the currency drop down and select "United States Dollar"                # steps.AddMembershipAndDependentsSteps.click_on_the_currency_drop_down_and_select_the_value(java.lang.String)
+  And click the Subscription Start Date field and select "Apr" "2022"                  # steps.AddMembershipAndDependentsSteps.click_the_subscription_start_date_field_and_select_values(java.lang.String,java.lang.String)
+  And click on the subscription renewal date calendar and select "Apr" "<renewalYear>" # steps.AddMembershipAndDependentsSteps.click_on_the_subscription_renewal_date_calendar_and_select_a_date(java.lang.String,java.lang.String)
+  Then click on save button                                                            # steps.AddMembershipAndDependentsSteps.click_on_save_button()
+
+    Embedding Adding membership to the employee (US-14) [image/png 322024 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 9927
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:08:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="add employee&apos;s Work Experience (US-4)" classname="As an admin I should be able to add employee&apos;s qualifications" time="23.284">
+    <system-out><![CDATA[
+@test @workexperience
+Scenario: add employee's Work Experience (US-4)                # src/test/resources/features/AddingQualificationToEmployee.feature:11
+  Given user enters valid admin credentials                    # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                              # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM option and clicks on EmployeeList # steps.AddingQualificationToEmployeeSteps.user_Navigates_To_PIM_Option_And_Clicks_On_EmployeeList()
+  Then user selects the first employee                         # steps.AddingQualificationToEmployeeSteps.user_Selects_The_First_Employee()
+  And user navigates to Qualifications                         # steps.AddingQualificationToEmployeeSteps.user_navigates_to_qualifications()
+  And clicks on add work experience button                     # steps.AddingQualificationToEmployeeSteps.clicks_On_Add_Work_Experience_Button()
+  When user fills out all the required fields                  # steps.AddingQualificationToEmployeeSteps.user_Fills_Out_All_The_Required_Fields()
+  Then user clicks on work experience save button              # steps.AddingQualificationToEmployeeSteps.user_Clicks_On_work_experience_Save_Button()
+
+    Embedding add employee's Work Experience (US-4) [image/png 287891 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 6698
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:09:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Add employee&apos;s skills (US-8)" classname="As an admin I should be able to add employee&apos;s qualifications" time="18.448">
+    <system-out><![CDATA[
+@test @skills
+Scenario: Add employee's skills (US-8)                         # src/test/resources/features/AddingQualificationToEmployee.feature:17
+  Given user enters valid admin credentials                    # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                              # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM option and clicks on EmployeeList # steps.AddingQualificationToEmployeeSteps.user_Navigates_To_PIM_Option_And_Clicks_On_EmployeeList()
+  Then user selects the first employee                         # steps.AddingQualificationToEmployeeSteps.user_Selects_The_First_Employee()
+  And user navigates to Qualifications                         # steps.AddingQualificationToEmployeeSteps.user_navigates_to_qualifications()
+  And clicks Add under Skills Box                              # steps.AddingQualificationToEmployeeSteps.clicks_add_under_skills_box()
+  When user able to fill out skill field                       # steps.AddingQualificationToEmployeeSteps.user_able_to_fill_out_skill_field()
+  Then saves the skill                                         # steps.AddingQualificationToEmployeeSteps.clicks_on_skills_save_button()
+
+    Embedding Add employee's skills (US-8) [image/png 177366 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 12699
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:09:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Add employee&apos;s licenses (US-10)" classname="As an admin I should be able to add employee&apos;s qualifications" time="24.849">
+    <system-out><![CDATA[
+@test @addingLicense
+Scenario: Add employee's licenses (US-10)                      # src/test/resources/features/AddingQualificationToEmployee.feature:23
+  Given user enters valid admin credentials                    # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                              # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM option and clicks on EmployeeList # steps.AddingQualificationToEmployeeSteps.user_Navigates_To_PIM_Option_And_Clicks_On_EmployeeList()
+  Then user selects the first employee                         # steps.AddingQualificationToEmployeeSteps.user_Selects_The_First_Employee()
+  And user navigates to Qualifications                         # steps.AddingQualificationToEmployeeSteps.user_navigates_to_qualifications()
+  And clicks Add under License Box                             # steps.AddingQualificationToEmployeeSteps.clicks_add_under_license_box()
+  When user able to fill out all license fields                # steps.AddingQualificationToEmployeeSteps.user_able_to_fill_out_all_license_fields()
+  Then clicks on save button                                   # steps.AddingQualificationToEmployeeSteps.clicks_on_save_button()
+
+    Embedding Add employee's licenses (US-10) [image/png 120298 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 12297
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:09:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding any languages for any employees (US-12)" classname="As an admin I should be able to add employee&apos;s qualifications" time="16.609">
+    <system-out><![CDATA[
+@test @addinglanguage
+Scenario: Adding any languages for any employees (US-12)       # src/test/resources/features/AddingQualificationToEmployee.feature:29
+  Given user enters valid admin credentials                    # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                              # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM option and clicks on EmployeeList # steps.AddingQualificationToEmployeeSteps.user_Navigates_To_PIM_Option_And_Clicks_On_EmployeeList()
+  Then user selects the first employee                         # steps.AddingQualificationToEmployeeSteps.user_Selects_The_First_Employee()
+  And user navigates to Qualifications                         # steps.AddingQualificationToEmployeeSteps.user_navigates_to_qualifications()
+  And user clicks on Add button                                # steps.AddingQualificationToEmployeeSteps.user_clicks_on_add_button()
+  Then user fill out the language fields                       # steps.AddingQualificationToEmployeeSteps.userFillOutTheLanguageFields()
+  Then user clicks on language save button                     # steps.AddingQualificationToEmployeeSteps.userClicksOnLanguageSaveButton()
+
+    Embedding Adding any languages for any employees (US-12) [image/png 120451 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 35293
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:10:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding new Skills (US-7)" classname="Admin user adding different qualifications" time="12.696">
+    <system-out><![CDATA[
+@skill @test
+Scenario: Adding new Skills (US-7)                          # src/test/resources/features/AddingQualifications.feature:9
+  Given user enters valid admin credentials                 # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                           # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to Qualifications page from admin tab # steps.AddingQualificationsSteps.user_navigates_to_qualifications_page_from_admin_tab()
+Skills
+  And selects skills from dropdown and clicks on it         # steps.AddingQualificationsSteps.selects_skills_from_dropdown_and_clicks_on_it()
+  Then user can add and save any skills                     # steps.AddingQualificationsSteps.user_can_add_and_save_any_skills()
+
+    Embedding Adding new Skills (US-7) [image/png 251616 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 18614
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:10:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding new licenses (US-9)" classname="Admin user adding different qualifications" time="13.085">
+    <system-out><![CDATA[
+@license @test
+Scenario: Adding new licenses (US-9)                          # src/test/resources/features/AddingQualifications.feature:14
+  Given user enters valid admin credentials                   # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                             # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to Qualifications page from admin tab   # steps.AddingQualificationsSteps.user_navigates_to_qualifications_page_from_admin_tab()
+Skills
+Education
+Licenses
+  And selects licenses                                        # steps.AddingQualificationsSteps.selects_licenses()
+  And clicks on add button and fill the name box              # steps.AddingQualificationsSteps.clicks_on_add_button_and_fill_the_name_box()
+  Then Admin can add licence and confirm message is displayed # steps.AddingQualificationsSteps.admin_can_add_licence_and_confirm_message_is_displayed()
+
+    Embedding Adding new licenses (US-9) [image/png 171591 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 46167
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:10:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding Any Language (US-11)" classname="Admin user adding different qualifications" time="11.389">
+    <system-out><![CDATA[
+@language @test
+Scenario: Adding Any Language (US-11)                       # src/test/resources/features/AddingQualifications.feature:20
+  Given user enters valid admin credentials                 # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                           # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to Qualifications page from admin tab # steps.AddingQualificationsSteps.user_navigates_to_qualifications_page_from_admin_tab()
+  And user clicks on Languages                              # steps.AddingQualificationsSteps.user_clicks_on_languages()
+  And user is able to clicks on Add button                  # steps.AddingQualificationsSteps.user_is_able_to_clicks_on_add_button()
+  And user can add any Languages                            # steps.AddingQualificationsSteps.user_can_add_any_languages()
+  Then user click on save button & done successfully        # steps.AddingQualificationsSteps.user_click_on_save_button_done_successfully()
+
+    Embedding Adding Any Language (US-11) [image/png 159051 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 36811
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:10:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding new Memberships (US-13)" classname="Admin user adding different qualifications" time="12.271">
+    <system-out><![CDATA[
+@membership @test
+Scenario: Adding new Memberships (US-13)                      # src/test/resources/features/AddingQualifications.feature:27
+  Given user enters valid admin credentials                   # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                             # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to Qualifications page from admin tab   # steps.AddingQualificationsSteps.user_navigates_to_qualifications_page_from_admin_tab()
+Skills
+Education
+Licenses
+Languages
+Memberships
+  And selects Memberships from the drop-down and clicks on it # steps.AddingQualificationsSteps.selects_memberships_from_the_drop_down_and_clicks_on_it()
+  Then user can add and save new Membership                   # steps.AddingQualificationsSteps.user_can_add_and_save_new_membership()
+
+    Embedding Adding new Memberships (US-13) [image/png 186970 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 19306
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:11:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="User story 1, changing employee&apos;s contact details" classname="Changing employee&apos;s contact details and emergency contacts" time="23.832">
+    <system-out><![CDATA[
+@test
+Scenario: User story 1, changing employee's contact details     # src/test/resources/features/ChangingEmployeeInfo.feature:12
+  When user enters valid admin credentials                      # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                               # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM and Employee list                  # steps.ChangingEmployeeInfoSteps.user_navigates_to_pim_employee_list()
+  Then user search for employee by employee id "7908464"        # steps.ChangingEmployeeInfoSteps.user_search_for_employee_by_employee_id(java.lang.String)
+  And user clicks on search button                              # steps.ChangingEmployeeInfoSteps.user_clicks_on_search_button()
+  Then user click on searched employee                          # steps.JobDetailsSteps.user_click_on_searched_employee()
+  Given user clicks on contact details and click on edit button # steps.ChangingEmployeeInfoSteps.user_clicks_on_contact_details_and_click_on_edit_button()
+  And user add employees and verify they are added              # steps.ChangingEmployeeInfoSteps.user_add_employees_and_verify_they_are_added(io.cucumber.datatable.DataTable)
+
+    Embedding User story 1, changing employee's contact details [image/png 351273 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 35752
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:11:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="User story 2, changing employee&apos;s emergency contacts" classname="Changing employee&apos;s contact details and emergency contacts" time="18.581">
+    <system-out><![CDATA[
+@test
+Scenario: User story 2, changing employee's emergency contacts            # src/test/resources/features/ChangingEmployeeInfo.feature:20
+  When user enters valid admin credentials                                # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                                         # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM and Employee list                            # steps.ChangingEmployeeInfoSteps.user_navigates_to_pim_employee_list()
+  Then user search for employee by employee id "7908464"                  # steps.ChangingEmployeeInfoSteps.user_search_for_employee_by_employee_id(java.lang.String)
+  And user clicks on search button                                        # steps.ChangingEmployeeInfoSteps.user_clicks_on_search_button()
+  Then user click on searched employee                                    # steps.JobDetailsSteps.user_click_on_searched_employee()
+  Given user clicks on  Emergency contact details and click on add button # steps.ChangingEmployeeInfoSteps.user_clicks_on_emergency_contact_details_and_click_on_add_button()
+  And user send Emergency Details                                         # steps.ChangingEmployeeInfoSteps.user_send_emergency_details(io.cucumber.datatable.DataTable)
+  And user click on save button                                           # steps.ChangingEmployeeInfoSteps.user_click_on_save_button()
+
+    Embedding User story 2, changing employee's emergency contacts [image/png 450823 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 6809
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:11:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Admin login Job Title drop down field, user can select values from there" classname="Adding job Details and Terminating Existing Employee" time="25.067">
+    <system-out><![CDATA[
+@JobDetails @dataTable @test
+Scenario: Admin login Job Title drop down field, user can select values from there # src/test/resources/features/JobDetails.feature:13
+  When user enters valid admin credentials                                         # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                                                  # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM and Employee list                                     # steps.ChangingEmployeeInfoSteps.user_navigates_to_pim_employee_list()
+  Then user search for employee by employee id "7908464"                           # steps.ChangingEmployeeInfoSteps.user_search_for_employee_by_employee_id(java.lang.String)
+  And user click on search button                                                  # steps.JobDetailsSteps.user_click_on_search_button()
+  Then user click on searched employee                                             # steps.JobDetailsSteps.user_click_on_searched_employee()
+  Then user clicks on Job button                                                   # steps.JobDetailsSteps.user_clicks_on_job_button()
+  And user click on  Edit button                                                   # steps.JobDetailsSteps.user_click_on_edit_button()
+  And user select Job Title, Employment status, Job Category form dropdowns        # steps.JobDetailsSteps.user_select_job_title_employment_status_jobb_category_form_dropdowns()
+  And user select Joined Date from calender                                        # steps.JobDetailsSteps.user_select_joined_date_from_calender(io.cucumber.datatable.DataTable)
+  And user select Sub Unit "developer", Location "HQ" from dropdowns               # steps.JobDetailsSteps.user_select_sub_unit_location_from_dropdowns(java.lang.String,java.lang.String)
+  And user select StartDate from Calendar                                          # steps.JobDetailsSteps.user_select_start_date_from_calendar(io.cucumber.datatable.DataTable)
+  And user select EndDate from Calendar                                            # steps.JobDetailsSteps.user_select_EndDate_from_calendar(io.cucumber.datatable.DataTable)
+  And user uploads file to ContractDetails                                         # steps.JobDetailsSteps.user_uploads_file_to_contract_details()
+  And user clicks on save button                                                   # steps.JobDetailsSteps.user_clicks_on_save_button()
+
+    Embedding Admin login Job Title drop down field, user can select values from there [image/png 353591 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 23102
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:12:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="User should be able to Terminate employment" classname="Adding job Details and Terminating Existing Employee" time="18.606">
+    <system-out><![CDATA[
+@TerminatingEmp @test
+Scenario: User should be able to Terminate employment    # src/test/resources/features/JobDetails.feature:30
+  When user enters valid admin credentials               # steps.LoginSteps.user_enters_valid_admin_credentials()
+  And user clicks on login button                        # steps.LoginSteps.user_clicks_on_login_button()
+  When user navigates to PIM and Employee list           # steps.ChangingEmployeeInfoSteps.user_navigates_to_pim_employee_list()
+  Then user search for employee by employee id "7908464" # steps.ChangingEmployeeInfoSteps.user_search_for_employee_by_employee_id(java.lang.String)
+  And user click on search button                        # steps.JobDetailsSteps.user_click_on_search_button()
+  Then user click on searched employee                   # steps.JobDetailsSteps.user_click_on_searched_employee()
+  Then user clicks on Job button                         # steps.JobDetailsSteps.user_clicks_on_job_button()
+  And then clicks on Terminate Employment                # steps.JobDetailsSteps.then_clicks_on_terminate_employment()
+  Then specified employee is terminated                  # steps.JobDetailsSteps.specified_employee_is_terminated()
+
+    Embedding User should be able to Terminate employment [image/png 353591 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 16024
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 26, 2022 5:12:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
